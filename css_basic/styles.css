@@ -1,1 +1,70 @@
-/* Custom styles - add your own styling here */
+/* styles.css - Positioning (Flexbox) and basic layout styling */
+
+/* Make the page and main area use Flexbox */
+body {
+  display: flex;
+  flex-direction: column; /* stack header, main, footer vertically */
+  min-height: 100vh;      /* ensure page fills the viewport height */
+  margin: 0;              /* avoid default body margins that break full-width */
+}
+
+/* The main area holds article and aside side-by-side */
+main {
+  display: flex;
+  flex-direction: row; /* place article and aside in a row */
+  flex: auto;          /* allow main to grow/shrink and take available space */
+  min-height: 0;       /* allow children to shrink properly when constrained */
+}
+
+/* Article should take 2/3 of the width, aside 1/3 */
+article {
+  flex: 2;            /* 2 parts */
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;   /* allow scrolling inside article */
+  min-width: 0;       /* needed so flex children can shrink properly */
+}
+
+aside {
+  flex: 1;            /* 1 part */
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;   /* allow scrolling inside aside */
+  min-width: 0;
+}
+
+/* Ensure header and footer span full width; by default in column flex they do */
+header, footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+}
+
+/* Optional: small visual niceties (you can change to fit your theme) */
+header {
+  background: #0a66c2;
+  color: white;
+}
+
+footer {
+  background: #f1f1f1;
+  color: #333;
+  margin-top: auto; /* push footer to bottom when content is short */
+}
+
+/* Optional: responsive tweak for very small screens (keeps flexbox but stacks article/aside) */
+@media (max-width: 640px) {
+  main {
+    flex-direction: column; /* stack article and aside on narrow screens */
+  }
+  article, aside {
+    flex: unset;
+    width: 100%;
+  }
+}
+
+/* Utility: logo class (if you add a unicode logo in header list) */
+.logo {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
