@@ -119,3 +119,114 @@ header nav a {
   font-size: 0.9rem;
   color: #ddd;
 }
+
+/* Videos Section */
+.videos-section {
+  background-color: #ffffff; /* White background */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.videos-section h2 {
+  color: #a259ff; /* Purple color */
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Container for video list */
+.videos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual video item */
+.video-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* Video thumbnail with play icon */
+.video-thumbnail {
+  position: relative;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.video-thumbnail::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Video title */
+.video-item h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px;
+  color: #333;
+}
+
+/* Video description */
+.video-item p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0 15px 15px;
+}
+
+/* Author block */
+.video-author {
+  display: flex;
+  align-items: center;
+  margin: 0 15px 15px;
+}
+
+.video-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.video-author span {
+  color: #a259ff; /* Purple text */
+  font-weight: bold;
+}
+
+/* Rating block */
+.video-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px 15px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.stars img {
+  width: 18px;
+  height: 18px;
+}
+
+.duration {
+  color: #a259ff; /* Purple duration */
+  font-weight: bold;
+}
