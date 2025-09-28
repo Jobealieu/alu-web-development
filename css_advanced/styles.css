@@ -230,3 +230,64 @@ header nav a {
   color: #a259ff; /* Purple duration */
   font-weight: bold;
 }
+
+/* Membership Section */
+.membership {
+  background-color: #f9f9f9; /* Light background */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.membership h2 {
+  font-size: 2.5rem;
+  color: #7d3cff; /* Purple color for "Free" */
+  margin-bottom: 40px;
+}
+
+.membership-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.membership-item {
+  flex: 1;
+  min-width: 220px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.membership-item i {
+  font-size: 40px;
+  color: #7d3cff; /* Purple icons */
+  margin-bottom: 15px;
+}
+
+.membership-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.membership-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.membership button {
+  margin-top: 40px;
+  padding: 12px 30px;
+  background-color: #7d3cff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.membership button:hover {
+  background-color: #5a2dbf; /* Darker purple on hover */
+}
