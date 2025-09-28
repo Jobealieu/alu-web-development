@@ -76,3 +76,46 @@ header nav a {
   font-style: italic;
   font-size: 14px;
 }
+
+/* Quotes Section */
+.quote-section {
+  background-color: #333; /* Example: dark background, adjust based on Figma */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+}
+
+.quote-author-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.quote-text {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.quote-title {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #ddd;
+}
